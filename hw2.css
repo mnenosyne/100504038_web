@@ -39,15 +39,17 @@ blockquote{
 article#course{
   max-width:700px;
   padding:2em;
-  margin:5px auto;
+  margin:10px auto;
   background: url(http://subtlepatterns.com/patterns/green_dust_scratch.png);
   border-radius:2em;
 }
 
+
+
 .picture{
   max-width:100%;
   padding:1em 1em;
-  background-color:rgba(242,245,248,0.6);
+ background:rgba(242,245,248,0.6);
   box-sizing:border-box;
  }
 
@@ -84,17 +86,19 @@ article#course{
 .other {
   position: relative;
   margin:1em;
-  padding:2em;
-  background-color: rgba(212,230,248,0.6);
+  padding:3em;
+  background-color:rgba(212,230,248,0.6);
+  -webkit-box-shadow:inset 4px 4px 5px 5px #DAEBF8;
+box-shadow:inset 4px 4px 5px 5px #DAEBF8;
   -webkit-border-radius: 10px 25px 10px 30px;
-  border-radius: 10px 25px 10px 30px;
-  box-shadow:inset 4px 4px 5px 5px #EEF5FC;
+border-radius: 10px 25px 10px 30px;
 }
 
 .other p{
   font-style:italic;
   color:#1B5DA3;
 }
+
 
 
 a:link{
@@ -110,4 +114,5 @@ a:hover{
 }
 a:active{
   color:#417C7D;
+}
 }
