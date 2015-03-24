@@ -7,13 +7,13 @@
 
 
 form {
-  max-width: 500px;
+  max-width: 700px;
   margin: 10px auto;
   padding: 20px 20px;
   background: url(http://subtlepatterns.com/patterns/pool_table.png);;
   border-radius: 3px;
   font: 17px/1.5 'Microsoft JhengHei' monospace;
-  width:360px;
+  width:5000px;
   color:#FBFFFD; 
   border:#06c dashed 1px;
 } 
@@ -33,6 +33,7 @@ select {
   outline: 0;
   padding: 15px;
   width: 100%;
+  max-width: 600px;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -73,11 +74,12 @@ fieldset {
 legend{
 	color:#006030;
 	font-weight:600; 
+    margin: 0 auto;
     font: 22px/1.5 monospace 'Microsoft JhengHei';
 	background-color:#F0F0F0;
 	border:#B8AA95 solid 2px;
 	padding:10px 10px;
-    width:300px;
+    width:600px;
 } 
 
 label {
