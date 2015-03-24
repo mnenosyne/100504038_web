@@ -1,40 +1,79 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="form2.css">
+  <meta charset="utf-8">
+  <title>form</title>
+</head>
+<body>
 
-<body bgcolor="#cccccc">
-<h2>政治大學選課登記：俄國藝術</h2>
-<form>
-姓名：<input type="text" name="General"><br>
-系級：<input type="text" name="General"><br>
-學號：<input type="text" name="General"><br>
-信箱：<input type="text" name="General"><br>
-手機：<input type="text" name="General"><br>
-<br>
-國籍<br>
-<select name="nationality">
-　<option value="asia">亞洲</option>
-　<option value="europe">歐洲</option>
-　<option value="america">美洲</option>
-　<option value="africa">非洲</option>
-　<option value="oceania">大洋洲</option>
-</select>
-<br><br>
-性別<br>
-<input type="radio" name="location" value="Taipei"> 女性<br>
-<input type="radio" name="location" value="Taoyuan"> 男性<br><br>
-請勾選你有興趣的課程內容<br>
+<form class="form2">
+  <fieldset>
+    <legend>政治大學選課登記：俄國藝術</legend>
+    
+    
+    <div class="basic">
+      <label for="name">姓名</label>
+      <input type="name" placeholder="輸入姓名">
+    </div><br>
+    
+    
+    
+      <div class="basic">
+      <label for="id">學號</label>
+      <input type="uid"  placeholder="輸入學號">
+    </div><br>
+    
+    <div class="basic">
+      <label for="email-1">信箱</label>
+      <input type="email" id="email" placeholder="輸入電子郵件">
+    </div><br>
+  
+   
+    
+    <div class="basic">
+      <label for="file-1">個人照</label>
+      <input type="file">
+      </div><br>
+
+   性別<br>
+<input type="radio" name="gemder" value="female"> 女性<br>
+<input type="radio" name="gender" value="male"> 男性<br><br>
+
+
+    
+    <div class="choose">
+      請勾選你有興趣的課程內容<br>
 <input type="checkbox" value="paint" name="Interest"> 俄國聖像畫<br>
 <input type="checkbox" value="music" name="Interest"> 俄國古典音樂<br>
 <input type="checkbox" value="ballet" name="Interest"> 俄國芭雷舞劇<br>
 <input type="checkbox" value="movie" name="Interest"> 俄國電影<br>
 <input type="checkbox" value="artist" name="Interest"> 俄國藝術家<br>
 <br>
-請填寫你最感興趣的藝術題材...<br>
-<textarea cols="40" rows="3">
-　</textarea>
-　
-　</form>
+    </div>
 
-<p><input type=submit VALUE="送 出"><INPUT TYPE=reset VALUE="重 寫"></p>
-</body>
+    <div class="am-form-group">
+      <label for="doc-select-1">國籍</label>
+      <select id="doc-select-1">
+        <option value="asia">亞洲</option>
+　      <option value="europe">歐洲</option>
+　      <option value="america">美洲</option>
+　      <option value="africa">非洲</option>
+　      <option value="oceania">大洋洲</option> 
+      </select>
+      <span class="am-form-caret"></span>
+    </div><br>
+    
+<div class="content">
+      <label for="doc-ta-1">請填寫你最感興趣的藝術題材...</label><br>
+      <textarea class="interest" rows="4"></textarea>
+    </div>
+
+    <p><input type=submit value="送 出"><INPUT TYPE=reset VALUE="重 寫"></p>
+
+</form>  
+</body>  
+
+
+
 </html>
