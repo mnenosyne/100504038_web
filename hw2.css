@@ -25,6 +25,12 @@ h3{
   
 }
 
+.basic img{
+  float:right;
+  margin:1px 60px;
+  max-width: 500px;
+}
+
 .basic{
  background:rgba(242,245,248,0.6);
   padding:1em 1em;
@@ -49,7 +55,7 @@ article#course{
 .picture{
   max-width:100%;
   padding:1em 1em;
-  background-color:rgba(242,245,248,0.6);
+ background:rgba(242,245,248,0.6);
   box-sizing:border-box;
  }
 
@@ -114,5 +120,4 @@ a:hover{
 }
 a:active{
   color:#417C7D;
-}
 }

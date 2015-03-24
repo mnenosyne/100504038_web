@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="form2.css">
   <meta charset="utf-8">
   <title>form</title>
 </head>
@@ -9,71 +8,60 @@
 
 <form class="form2">
   <fieldset>
-    <legend>政治大學選課登記：俄國藝術</legend>
+    <legend>Course Selection System: Russian Art</legend>
     
-    
-    <div class="basic">
-      <label for="name">姓名</label>
-      <input type="name" placeholder="輸入姓名">
-    </div><br>
-    
-    
-    
-      <div class="basic">
-      <label for="id">學號</label>
-      <input type="uid"  placeholder="輸入學號">
-    </div><br>
-    
-    <div class="basic">
-      <label for="email-1">信箱</label>
-      <input type="email" id="email" placeholder="輸入電子郵件">
-    </div><br>
-  
-   
-    
-    <div class="basic">
-      <label for="file-1">個人照</label>
+ 
+<fieldset>
+<label for="name">Name:</label>
+          <input type="text" placeholder="Type Your Name" id="name" name="user_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" placeholder="Type Your Email" id="mail" name="user_email">
+          
+          <label for="idnum">Student Number:</label>
+          <input type="number" placeholder="Type Your Student Number" id="num" name="stunumber">
+          
+        <label>Age:</label>
+          <input type="radio" id="Male" value="m" name="stu_gen"><label for="Male" class="light">Male</label><br>
+          <input type="radio" id="Female" value="f" name="stu_gen"><label for="Female" class="light">Female</label>
+    <br><br>
+ 
+<div class="basic">
+      <label for="file-1">Upload Your photo</label>
       <input type="file">
       </div><br>
 
-   性別<br>
-<input type="radio" name="gemder" value="female"> 女性<br>
-<input type="radio" name="gender" value="male"> 男性<br><br>
-
-
+        <label for="nationality">Region</label>
+        <select id="job" name="user_job">
+          
+            <option value="Asia">Asia</option>
+            <option value="Euo">Europe</option>
+            <option value="Ame">America</option>
+            <option value="Afr">Africa</option>
+            <option value="Oce">Oceania</option>
+        </select>
+        
+<label>Interests:</label>
+<input type="checkbox" id="development" value="interest_development" name="user_interest" >
     
-    <div class="choose">
-      請勾選你有興趣的課程內容<br>
-<input type="checkbox" value="paint" name="Interest"> 俄國聖像畫<br>
-<input type="checkbox" value="music" name="Interest"> 俄國古典音樂<br>
-<input type="checkbox" value="ballet" name="Interest"> 俄國芭雷舞劇<br>
-<input type="checkbox" value="movie" name="Interest"> 俄國電影<br>
-<input type="checkbox" value="artist" name="Interest"> 俄國藝術家<br>
-<br>
-    </div>
-
-    <div class="am-form-group">
-      <label for="doc-select-1">國籍</label>
-      <select id="doc-select-1">
-        <option value="asia">亞洲</option>
-　      <option value="europe">歐洲</option>
-　      <option value="america">美洲</option>
-　      <option value="africa">非洲</option>
-　      <option value="oceania">大洋洲</option> 
-      </select>
-      <span class="am-form-caret"></span>
-    </div><br>
     
-<div class="content">
-      <label for="doc-ta-1">請填寫你最感興趣的藝術題材...</label><br>
-      <textarea class="interest" rows="4"></textarea>
-    </div>
+    <label class="light" for="development">Russian icon</label><br>
+            
+    <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light">Russian classical music</label><br>
+   
+    <input type="checkbox" id="development" value="interest_development" name="user_interest" ><label class="light" >Russian artists</label><br>
+    <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" >Russian ballet</label><br>
+    <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" >Russian movie</label><br><br>
+       
+          
+<label for="sub">Your interested subjects</label>
+          <textarea id="subject" name="stu_sub"></textarea>
+        </fieldset>
+    
+<button type="submit">Submit</button>
 
-    <p><input type=submit value="送 出"><INPUT TYPE=reset VALUE="重 寫"></p>
+   
 
 </form>  
 </body>  
-
-
-
 </html>
