@@ -29,3 +29,63 @@ select {
   height: auto;
   margin: 0;
   outline: 0;
+  padding: 15px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding:20px 20px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 16px 30px;
+  color: #FFF;
+  background-color: #00A600;
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 25px;
+  width: 100%;
+  border: 1px solid #01814A;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend{
+	color:#006030;
+	font-weight:500; 
+    font: 22px/1.5 monospace 'Microsoft JhengHei';
+	background-color:#F0F0F0;
+	border:#B8AA95 solid 2px;
+	padding:10px 10px;
+    width:300px;
+} 
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
