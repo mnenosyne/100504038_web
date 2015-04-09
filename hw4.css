@@ -1,0 +1,36 @@
+a {color: #666666;
+  font:16px /1.75 Tahoma, sans-serif;
+}
+
+
+
+a:link{
+  text-decoration: none;
+  color:#666666;
+}
+a:visited{
+  color:#895117;
+}
+a:hover{
+  text-decoration: underline;
+  color: #178918;
+}
+
+
+body {
+  font:14px/1.75 Tahoma, sans-serif;
+  color: #666666;
+  background: url(http://subtlepatterns.com/patterns/old_moon.png);
+  
+}
+
+
+.page-header{
+  border: solid 8px #F5F5F5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+    padding:5px 20px 10px 20px;
+}
+
