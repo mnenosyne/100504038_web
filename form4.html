@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>form</title>
+   <link rel="stylesheet" type="text/css" href="form2.css">
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<form class="form2">
+  <fieldset>
+    <legend>Course Selection System: Russian Art</legend>
+    
+ 
+<fieldset>
+<label for="name">Name:</label>
+          <input type="text" class="form-control" placeholder="Type Your Name" id="name" name="user_name" required autofocus>
+          
+          <label for="mail">Email:</label>
+          <input type="email" class="form-control" placeholder="Type Your Email" id="mail" name="user_email" required>
+          
+          <label for="idnum">Student Number:</label>
+          <input type="number" class="form-control" placeholder="Type Your Student Number" id="num" name="stunumber"  pattern="[0-9]{8,9}" required>
+          
+        <label>Age:</label>
+          <input type="radio" id="Male" value="m" name="stu_gen"><label for="Male" class="light">Male</label><br>
+          <input type="radio" id="Female" value="f" name="stu_gen"><label for="Female" class="light">Female</label>
+    <br><br>
+ 
+<div class="basic">
+      <label for="file-1">Upload Your photo</label>
+      <input type="file">
+      </div><br>
+
+        <label for="nationality">Region</label>
+        <select id="job" name="user_job">
+          
+            <option value="Asia">Asia</option>
+            <option value="Euo">Europe</option>
+            <option value="Ame">America</option>
+            <option value="Afr">Africa</option>
+            <option value="Oce">Oceania</option>
+        </select>
+        
+<label>Interests:</label>
+
+  
+  <label class="light" for="development"><input type="checkbox" id="development" value="interest" name="stu_interest">Russian icon</label><br>
+
+            
+    <label class="light"><input type="checkbox" id="development" value="interest" name="stu_interest">Russian classical music</label><br>
+   
+    <label class="light" ><input type="checkbox" id="development" value="interest" name="stu_interest" >Russian artists</label><br>
+    <label class="light" ><input type="checkbox" id="development" value="interest" name="stu_interest">Russian ballet</label><br>
+    <label class="light" ><input type="checkbox" id="development" value="interest" name="stu_interest">Russian movie</label><br><br>
+       
+          
+<label for="sub">Your interested subjects</label>
+          <textarea class="form-control" id="subject" name="stu_sub"></textarea>
+        </fieldset>
+    
+<button type="submit">Submit</button>
+
+   
+
+</form>  
+</body>  
+</html>
