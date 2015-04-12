@@ -1,36 +1,92 @@
-a {color: #666666;
-  font:16px /1.75 Tahoma, sans-serif;
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 
-a:link{
-  text-decoration: none;
-  color:#666666;
-}
-a:visited{
-  color:#895117;
-}
-a:hover{
-  text-decoration: underline;
-  color: #178918;
+form {
+  max-width: 800px;
+  margin:5px  auto;
+  padding: 20px 20px;
+  background: url(http://subtlepatterns.com/patterns/pool_table.png);;
+  border-radius: 3px;
+  font: 17px/1.5 'Microsoft JhengHei' monospace;
+  width:600px;
+  color:#FBFFFD; 
+  border:#06c dashed 1px;
+} 
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
 }
 
 
-body {
-  font:14px/1.75 Tahoma, sans-serif;
-  color: #666666;
-  background: url(http://subtlepatterns.com/patterns/old_moon.png);
-  
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
 }
 
-
-.page-header{
-  border: solid 8px #F5F5F5;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-    padding:5px 20px 10px 20px;
+select {
+  padding:20px 20px;
+  height: 32px;
+  border-radius: 2px;
 }
 
+button {
+  padding: 16px 30px;
+  color: #FFF;
+  background-color: #00A600;
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 25px;
+  width: 100%;
+  border: 1px solid #01814A;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend{
+  color:#006030;
+  font-weight:500; 
+    font: 22px/1.5 monospace 'Microsoft JhengHei';
+  background-color:#F0F0F0;
+  border:#B8AA95 solid 2px;
+  padding:10px 10px;
+    width:300px;
+  margin: auto;
+} 
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
