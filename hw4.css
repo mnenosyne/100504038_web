@@ -25,7 +25,7 @@ body {
 }
 
 
-page-header{
+.page-header{
   border: solid 8px #F5F5F5;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
