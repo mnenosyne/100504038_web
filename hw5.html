@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather</title>
+  <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="mycss.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="panel panel-info">
+  <div class="panel-body">
+  <div class="row">
+    <div class="col-xs-6">
+      <!-- Large button group -->
+      <div class="btn-group">
+        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          Taipei <span class="caret"></span>
+        </button>
+        <ul id="dropdown" class="dropdown-menu" role="menu">
+          <li role="presentation"><a role="menuitem" href="#">Taipei City</a></li>
+          <li role="presentation"><a role="menuitem" href="#">New Taipei City </a></li>
+          <li role="presentation"><a role="menuitem" href="#">Keelung</a></li>  
+          <li role="presentation"><a role="menuitem" href="#">Taoyuan</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Hsinchu City</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Hsinchu County</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Miaoli</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Nantou</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Taichung</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Changhua</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Yunlin</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Kinmen</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Kaohsiung</a></li></a></li>
+          <li role="presentation"><a role="menuitem" href="#">Yilan</a></li></a></li>
+          <li role="presentation"><a role="menuitem" href="#">Penghu</a></li></a></li>
+          <li role="presentation"><a role="menuitem" href="#"> Pingtung</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Chiayi City</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Chiayi County</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Pingtung </a></li>
+          <li role="presentation"><a role="menuitem" href="#">Tainan</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Hualien</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Taidong</a></li>
+          <li role="presentation"><a role="menuitem" href="#">Lianjiang</a></li>      
+      </ul>
+      </div>
+      
+    </div>
+    <div class="col-xs-6" >
+      <canvas id="today" width="100" height="100"></canvas>
+          <div id="cityName"></div>
+          <div><span class="temperature" id="big"></span></div>
+          <div><span class="date" id="now"></span></div>
+      </div>
+    </div>
+  
+  
+  
+
+  <div><h3>Forecast</h3>
+    <table  id="foreC">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  
+
+
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script> 
+<script src="skycons.js"></script>
+<script src="myapp.js"></script>
+</body>
+</html>
