@@ -11,10 +11,17 @@
   <link rel="stylesheet" href="css/css.css">
   <script type="text/javascript" src="js/key.js"></script>
   <script>
+  $(function(){
+    var currentUser = Parse.User.current();
+    if(currentUser){
+      window.location = "index.html";
+    }
+  })
+
   // Step 4 : 登入
   $(document).on('submit','#logInForm',function(e){
     e.preventDefault();  // 避免 form submit 完成後 轉址
-    console.log ("login") ;
+    console.log ("login2");
     var username = $('#username').val() ;
     var password = $('#password').val() ;
     // 用 Parse.User.current() 判定使用者是否是登入的狀態，這裏還沒登入，會是 null
@@ -26,24 +33,24 @@
         var attend = new Attend();
 
         attend.set("name", username);
+        attend.set("role", user.get("role"));
 
         attend.save(null, {
           success: function(attend) {
             // Execute any logic that should take place after the object is saved.
-            alert('New object created with objectId: ' + attend.id);
+            alert('登入成功並簽到') ;
             // 轉到index
-            window.location = "index.html" ;
-             return null ; 
+            window.location = "index.html";
+            return null;
           },
           error: function(attend, error) {
             // Execute any logic that should take place if the save fails.
             // error is a Parse.Error with an error code and message.
-            alert('Failed to create new object, with error code: ' + error.message);
+            alert('無法順利簽到，請重新輸入資料');
+            console.log("error message" + error.message);
           }
         });// 到 console 看看 Parse.User.current()  的東西
         // console.log("登入之後的 Parse.User.current()  : ",/*請完成程式碼部分*/) ;
-        alert('登入成功') ;
-        window.location = 'index.html' ;
       },
       error: function(user, error) {
         console.log(error) ;
