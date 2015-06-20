@@ -48,7 +48,7 @@
             for (var i = 0; i < results.length; i++) { 
               var object = results[i];
               console.log(object);
-              attend_table.append("<tr><td>"+object.get("name")+"</td></tr>");
+              attend_table.append("<tr><td>"+object.get("name")+"</td><td>"+object.createdAt+"</td></tr>");
             }
           },
           error: function(error) {
@@ -70,7 +70,7 @@
     <div class="row">
       <table id="table" class="table table-striped">
         <tr>
-          <td>已出席學生</td>
+          <td>已出席學生</td><td>簽到時間</td>
         </tr>
       </table>
     </div>
